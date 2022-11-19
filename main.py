@@ -2,7 +2,7 @@ import math
 
 
 def f(x):
-    f = math.exp(x) + math.sqrt(3*x) + math.cos(-9*x) - 5*x**2
+    f = math.exp(-2*x) + math.sqrt(3*x) + math.cos(-9*x) - 5*x**1.5
     return f
 
 
@@ -16,4 +16,4 @@ for i in range(1, n):
     integral = integral + dx * f(i * dx)
 
 print("Значение определённого интеграла = ", integral)
-print("Точность" + str((integral/n) /integral) + '%')
+print("Точность " + str((integral/n) /integral) + '%')
